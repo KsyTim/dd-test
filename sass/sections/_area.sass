@@ -1,0 +1,50 @@
+.area
+  padding: 5rem 0
+  background: linear-gradient(0deg, $white-color 0%, $main-color 145%)
+  position: relative
+  top: -2px
+  &-title
+    display: none
+  &-container
+    display: grid
+    grid-template: repeat(3, min-content) / repeat(3, 30%)
+    grid-template-areas: 'first first fifth' 'sixth third fifth' 'second second fourth' 'second second fourth'
+    grid-gap: 3rem 5%
+    &-first
+      grid-area: first
+    &-second
+      grid-area: second
+    &-third
+      grid-area: third
+    &-fourth
+      grid-area: fourth
+    &-fifth
+      grid-area: fifth
+    &-sixth
+      grid-area: sixth
+    &-image
+      margin: 0
+      img
+        width: 100%
+        border-radius: 20px
+    &-text
+      padding: 3rem 2rem
+      text-align: justify
+      background-color: $black-color
+      color: $area-text
+      font-style: italic
+      box-shadow: 0 0 10px #000, 0 0 10px #000
+      line-height: 1.3rem
+      p
+        margin: 10px 0 0
+    &-item
+      border-radius: 20px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+  &-link
+    color: $area-link
+    font-weight: 550
+    font-size: 1.1rem
+    font-weight: 550

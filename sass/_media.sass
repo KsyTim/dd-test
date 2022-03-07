@@ -1,5 +1,12 @@
-// @media screen and (max-width: 1200px)
+@media screen and (max-width: 1300px)
+  .area
+    &-container
+      grid-template: repeat(5, min-content)/repeat(2, 48%)
+      grid-template-areas: 'first first' 'fourth fourth' 'fifth third' 'fifth sixth' 'second second'
+      grid-gap: 3rem 4%
+
 // @media screen and (max-width: 1024px)
+
 @media screen and (max-width: 992px)
   .wrapper
     max-width: 85vw
@@ -19,6 +26,10 @@
       &-link
         font-size: 1.3rem
 
+  .area
+    &-container
+      grid-template-areas: 'first first' 'sixth sixth' 'fifth third' 'fourth fourth' 'second second'
+
 @media screen and (max-width: 768px)
   .header
     &-logo
@@ -37,12 +48,22 @@
       &-container
         padding: 4rem
 
+    .area
+    &-container
+      grid-template-areas: 'first first' 'sixth sixth' 'fifth third' 'fifth fourth' 'second second'
+
 @media screen and (max-width: 680px)
   .wrapper
     max-width: 90vw
   .header
     &-title
       font-size: 2.5rem
+  .area
+    &-link
+      font-size: 1rem
+    &-container
+      &-text
+        padding: 2rem 1.3rem
 
 @media screen and (max-width: 576px)
   .header
@@ -70,6 +91,12 @@
     &-container
       &-pic
         width: 300px
+
+  .area
+    &-container
+      grid-template: repeat(6, min-content)/repeat(1, 100%)
+      grid-template-areas: 'first' 'sixth' 'third' 'fifth' 'fourth' 'second'
+      grid-gap: 3rem 0%
 
 @media screen and (max-width: 480px)
   .header
