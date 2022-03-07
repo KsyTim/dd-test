@@ -1,0 +1,23 @@
+.popular
+  .meet
+    &-container
+      position: relative
+      z-index: 2
+      &::before
+        position: absolute
+        content: ''
+        top: 5%
+        right: 10%
+        width: 100px
+        height: 100px
+        background: url(../assets/img/star.svg) no-repeat
+        z-index: -2
+      &::after
+        position: absolute
+        content: ''
+        bottom: 10%
+        left: 15%
+        width: 100px
+        height: 100px
+        background: url(../assets/img/star.svg) no-repeat
+        z-index: -2

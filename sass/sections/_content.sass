@@ -1,7 +1,10 @@
 .content
   &-navigation
+    background: linear-gradient(0deg, #ffffff 0%, #06151d 90%)
     padding: 5rem 0
     font-size: 1.5rem
+    position: relative
+    top: -20px
     &-onoff
       display: flex
       align-items: center
@@ -30,13 +33,13 @@
     li
       margin-bottom: 0.8rem
       &::marker
-        color: $main-color
+        color: $area-text
         text-shadow: 1px 1px 2px $black-color
     &-link
       +links
       margin-left: 0.5rem
       font-style: italic
-      color: $main-text-color
+      color: $area-text
   &-onoff
     &-btn
       +links
