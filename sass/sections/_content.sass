@@ -1,0 +1,103 @@
+.content
+  &-navigation
+    padding: 5rem 0
+    font-size: 1.5rem
+    &-onoff
+      display: flex
+      align-items: center
+      max-width: 10rem
+      justify-content: space-between
+      align-self: flex-end
+    &-container
+      display: flex
+      flex-direction: column
+      background-color: transparent
+      padding: 5rem
+      border-radius: 20px
+      border: 1px solid $main-color
+      box-shadow: 0 0 10px $main-color, 0 0 10px $main-color
+    &-title
+      margin: 0 0 3rem
+      text-transform: uppercase
+      color: $main-color
+      text-shadow: 3px 3px 5px $black-color
+  &-container
+    margin: 0 0 10px
+    height: 0
+    visibility: hidden
+    opacity: 0
+    transition: opacity 1s linear
+    li
+      margin-bottom: 0.8rem
+      &::marker
+        color: $main-color
+        text-shadow: 1px 1px 2px $black-color
+      // position: relative
+      // &::before
+      //   display: inline-block
+      //   content: ''
+      //   left: 0
+      //   top: 4px
+      //   width: 18px
+      //   height: 18px
+      //   border-radius: 50%
+      //   background: url(../assets/img/triangle.svg) center no-repeat
+    &-link
+      +links
+      margin-left: 0.5rem
+      font-style: italic
+  &-onoff
+    &-btn
+      +links
+      margin: 0 35px 0 0
+      color: $main-color
+      text-shadow: 1px 1px 3px $black-color
+    &-arrow
+      &__down
+        display: none
+        position: relative
+        &::before,
+        &::after
+          position: absolute
+          top: -2px
+          left: -20px
+          width: 2px
+          height: 8px
+          z-index: 1
+          content: ""
+          -webkit-transition: all .23s
+          transition: all .23s
+          transform: rotate(135deg)
+          background: $main-color
+        &::before
+          top: -2px
+          left: -15px
+          transform: rotate(225deg)
+      &__up
+        display: none
+        position: relative
+        &::before,
+        &::after
+          position: absolute
+          top: -2px
+          left: -20px
+          width: 2px
+          height: 8px
+          z-index: 1
+          content: ""
+          -webkit-transition: all .23s
+          transition: all .23s
+          transform: rotate(46deg)
+          background: $main-color
+        &::before
+          top: -2px
+          left: -15px
+          transform: rotate(135deg)
+
+.active
+  opacity: 1
+  visibility: visible
+  height: 30vh
+
+.show
+  display: block
